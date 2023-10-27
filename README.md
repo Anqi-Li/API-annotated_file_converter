@@ -37,7 +37,7 @@ open_label_annotation = convert(kognic_annotation)
 ```
 
 ## Flask API
-To activate the Flask app, type in the terminal/command line the following
+To activate the Flask app locally, type in the terminal/command line the following
 ```
 python flask_app.py
 
