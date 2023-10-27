@@ -5,6 +5,18 @@ import requests as R
 
 app = Flask(__name__)
 
+@app.route("/")
+def hello():
+    return '''
+    <h1>Welcome to the annotation converter API!<h1>
+    <h1>Please navigate to the end points<h1>
+        <h1>- /from_url (input an url)<h1>
+        <h1>- /from_json_file (post a json file)<h1>
+        <h1>- /kognic_1.json (get a sample json file)<h1>
+        <h1>- /convertion_test (test on the sample json file)<h1>
+    <h1>for appropiate usage.  <h1>
+'''
+
 @app.route("/from_url",  methods=['GET', 'POST'])
 def get_openlabel_annotation_from_url():
     # handle the POST request
