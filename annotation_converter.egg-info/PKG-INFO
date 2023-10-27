@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: annotation-converter
+Version: 0.1.0
+Summary: An API to convert annotation formats from kognic to openlabel styles
+Home-page: https://github.com/Anqi-Li/API-annotated_file_converter
+Author: Anqi Li
+Author-email: li.a.titech@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
