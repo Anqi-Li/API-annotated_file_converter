@@ -1,8 +1,14 @@
 #%%
-import json
 
-# %%
-def convert(kognic_annotation):
+def convert(kognic_annotation: dict) -> dict:
+    '''
+    convert annotation from kognic to openlabel  format
+        parameters: 
+            kognic_annotation (dict): dictionary of annotation in format
+        returns: 
+            openlabel_annotation (dict): dictionary of annotation in openlabel format
+    '''
+    
     # initiate the openlabel structure
     openlabel_annotation = {}
     openlabel_annotation['data'] = {
@@ -71,17 +77,5 @@ def convert(kognic_annotation):
         }
 
     return openlabel_annotation
-
-
-# %% temp for testing
-path_to_kognic_annotation = './annotated_files/kognic_1.json'
-with open(path_to_kognic_annotation, 'r') as content:
-    kognic_annotation = json.load(content)
-    
-path_to_openlabel_annotation = './annotated_files/open_label_1.json'
-with open(path_to_openlabel_annotation, 'r') as content:
-    openlabel_annotation_org = json.load(content)
-
-openlabel_annotation_org == convert(kognic_annotation)
 
 # %%
