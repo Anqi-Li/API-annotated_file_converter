@@ -21,7 +21,7 @@ def hello():
 def get_openlabel_annotation_from_url():
     # handle the POST request
     if request.method == 'POST':
-        url = request.form.get('Enter url contains kognic annotation')
+        url = request.form.get('Enter URL contains annotation in JSON')
         json_str = R.get(url).json()
         json_data = json.loads(json_str)
         return jsonify(convert(json_data))

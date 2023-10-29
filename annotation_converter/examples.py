@@ -20,8 +20,8 @@ open_label_annotation = response.json()
 # this particualr url requires the flask app is activated locally
 # run 'python flask_app.py' in terminal to activate the app
 # you may replace with your own url 
-api_url = "http://localhost:5000/kognic_1.json" 
-response = requests.get(api_url)
+url_json = "http://localhost:5000/kognic_1.json" 
+response = requests.get(url_json)
 kognic_annotation = response.json()
 
 open_label_annotation = convert(kognic_annotation)
