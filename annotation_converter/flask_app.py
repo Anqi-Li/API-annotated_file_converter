@@ -8,13 +8,13 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return '''
-    <h1>Welcome to the annotation converter API!<h1>
-    <h1>Please navigate to the end points<h1>
-        <h1>- /from_url (input an url)<h1>
-        <h1>- /from_json_file (post a json file)<h1>
-        <h1>- /kognic_1.json (get a sample json file)<h1>
-        <h1>- /convertion_test (test on the sample json file)<h1>
-    <h1>for appropiate usage.  <h1>
+    <h1>Welcome to the annotation converter API!</h1>
+    <h2>Please navigate to the end points</h2>
+        <h3>-<a href="/from_url">/from_url (to input an url)</a></h3>
+        <h3>- /from_json_file (post request a json file)</h3>
+        <h3>-<a href="/kognic_1.json">/kognic_1.json (get a sample json file)</a></h3>
+        <h3>-<a href="/convertion_test">/convertion_test (test on the sample json file)</a></h3>
+    <h2>for appropiate usage.  </h2>
 '''
 
 @app.route("/from_url",  methods=['GET', 'POST'])
@@ -50,7 +50,7 @@ def get_kognic_annotation_test():
 
 @app.route("/convertion_test")
 def get_openlabel_annotation_test():
-    return jsonify(convert(get_kognic_annotation_test()))
+    return convert(get_kognic_annotation_test())
 
 if __name__ == '__main__':
     # run app in debug mode on port 5000
