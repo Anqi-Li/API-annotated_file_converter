@@ -1,7 +1,7 @@
 # API-annotated_file_converter
 An API that converts different annotation formats of JSON files.
 
-## pip install package
+### pip install the package
 In the terminal/command line, run the following command
 ```
 pip install "git+https://github.com/Anqi-Li/API-annotated_file_converter"
@@ -20,6 +20,13 @@ To activate the Flask app locally, type in the terminal/command line the followi
 ```
 python flask_app.py
 ```
+Alternatively, setup the environmental variables `FLASK_APP` and `FLASK_ENV` and run flask
+```
+export FLASK_APP=flask_app.py
+export FLASK_ENV=development
+flask run
+```
+
 After executing these commands, we can reach our application locally by sending requests in Python, by navigating to http://127.0.0.1:5000/ in a browser, or by issuing a `curl` command. Note: the local IP address can be replaced by `localhost`, i.e. http://localhost:5000. 
 
 ### POST requests in Python
