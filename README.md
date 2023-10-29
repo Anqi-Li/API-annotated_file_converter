@@ -29,7 +29,7 @@ flask run
 
 After executing these commands, we can reach our application locally by sending requests in Python, by navigating to http://127.0.0.1:5000/ in a browser, or by issuing a `curl` command. Note: the local IP address can be replaced by `localhost`, i.e. http://localhost:5000. 
 
-### POST requests in Python
+### Use Python to POST requests
 You may use the Python `requests` library for sending HTTP requests. Use url "http://127.0.0.1:5000/from_json_file" as the API endpoint for the request, and the keyward argument `json=` to specify the payload.
 ```Python
 import requests
@@ -48,7 +48,7 @@ where `PATH/TO/FILE.json` shall be replaced by your local JSON file, such as [`.
 Navigate to http://127.0.0.1:5000/ and select the appropriate endpoint.
 For example, go to http://127.0.0.1:5000/from_url, insert the url and click the `submit` button.
 
-### Use `curl` to convert a JSON file
+### Use `curl` to post requests
 In a terminal/command line, type (assuming `curl` is installed)
 ```
 curl -i http://127.0.0.1:5000/from_json_file -X POST -H "Content-Type: application/json" -d @PATH/To/FILE.json
