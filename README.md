@@ -18,11 +18,11 @@ There are several options to convert the annotation formats. The following descr
 ## Activate the Flask API and HTTP request
 To activate the Flask app locally, type in the terminal/command line the following
 ```
-python flask_app.py
+python annotation_converter/flask_app.py
 ```
 Alternatively, setup the environmental variables `FLASK_APP` and `FLASK_ENV` and run flask
 ```
-export FLASK_APP=flask_app.py
+export FLASK_APP=annotation_converter/flask_app.py
 export FLASK_ENV=development
 flask run
 ```

@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from utils import convert
+from annotation_converter.utils import convert
 import json
 import requests as R
 
