@@ -20,14 +20,14 @@ To activate the Flask app locally, type in the terminal/command line the followi
 ```
 python annotation_converter/flask_app.py
 ```
-Alternatively, setup the environmental variables `FLASK_APP` and `FLASK_ENV` and run flask
+Alternatively, setup the environmental variables `FLASK_APP` and `FLASK_ENV`, then run flask
 ```
 export FLASK_APP=annotation_converter/flask_app.py
 export FLASK_ENV=development
 flask run
 ```
 
-After executing these commands, we can reach our application locally by sending requests in Python, by navigating to http://127.0.0.1:5000/ in a browser, or by issuing a `curl` command. Note: the local IP address can be replaced by `localhost`, i.e. http://localhost:5000. 
+After executing these commands, we can reach our application locally by sending requests in Python, by navigating to http://127.0.0.1:5000/ in a browser, or by issuing a `curl` command in terminal. Note: the local IP address can be replaced by "`localhost`", i.e. http://localhost:5000. 
 
 ### Use Python to POST requests
 You may use the Python `requests` library for sending HTTP requests. Use url "http://127.0.0.1:5000/from_json_file" as the API endpoint for the request, and the keyward argument `json=` to specify the payload.
